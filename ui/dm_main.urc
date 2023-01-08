@@ -1,0 +1,957 @@
+menu "dm_main" 635 660 NONE 0
+bgcolor 0.00 0.00 1.00 1.00
+borderstyle "3D_BORDER"
+
+
+
+
+}
+resource
+Button
+{
+title "MAIN MENU"
+name "main_menu"
+rect 425 335 205 20
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 0.75 0.75 0.75 1.00
+borderstyle "3D_BORDER"
+stuffcommand "popmenu 0;wait 250;pushmenu main"
+clicksound "musique/laser2.wav"
+font handle-18
+hovershader "menu_button_glow"
+
+}
+resource
+Button
+{
+title "MP OPTIONS"
+name "mp_option"
+rect 425 410 205 20
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 0.75 0.75 0.75 1.00
+borderstyle "3D_BORDER"
+stuffcommand "popmenu 0;wait 250;ui_getplayermodel;pushmenu mpoptions"
+clicksound "musique/siren.wav"
+font handle-18
+hovershader "menu_button_glow"
+
+}
+resource
+Button
+{
+title "TEAM"
+name "team"
+rect 425 360 205 20
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 0.75 0.75 0.75 1.00
+borderstyle "3D_BORDER"
+stuffcommand "popmenu 0;wait 250;pushmenu_teamselect"
+clicksound "musique/laser.wav"
+font facfont-20
+hovershader "menu_button_glow"
+}
+
+}
+resource
+Button
+{
+title "WEAPONS"
+name "weapons"
+rect 425 385 205 20
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 0.75 0.75 0.75 1.00
+borderstyle "3D_BORDER"
+stuffcommand "popmenu 0;wait 250;pushmenu_weaponselect"
+clicksound "musique/laser.wav"
+font handle-18
+hovershader "menu_button_glow"
+
+}
+resource
+Button
+{
+title "RECONNECT"
+name "reconnect"
+rect 425 460 205 20
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 0.75 0.75 0.75 1.00
+borderstyle "3D_BORDER"
+stuffcommand "reconnect"
+font handle-18
+clicksound "musique/laser2.wav"
+hovershader "menu_button_glow"
+
+}
+resource
+Button
+{
+title "Join AXIS"
+name "join_axis"
+rect 5 335 205 20
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 1.00 1.00 0.00 1.00 
+borderstyle "3D_BORDER"
+stuffcommand "wait 500; join_team axis; wait 200; Popmenu 0"
+clicksound "musique/yes_g.wav"
+font handle-18
+hovershader "menu_button_glow"
+
+
+}
+resource
+Field
+{
+title "nameentry"
+name "Default"
+rect 95 260 221 24
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 1.00 1.00 1.00 1.00
+borderstyle "INDENT_BORDER"
+clicksound "sound/menu/scroll.wav"
+linkcvar "ui_name"
+font facfont-20
+textalign left
+
+}
+resource
+Button
+{
+title "Join ALLIED"
+name "join_allied"
+rect 215 335 205 20
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 1.00 1.00 0.00 1.00 
+borderstyle "3D_BORDER"
+stuffcommand "wait 500; join_team allies; wait 200; Popmenu 0"
+clicksound "musique/yes_a.wav"
+font handle-18
+hovershader "menu_button_glow"
+
+}
+/////
+
+resource
+button
+{
+title "Allied Model-SKIN"
+name "model allied"
+rect 215 360 205 20
+fgcolor 1.00 0.00 0.00 1.00
+bgcolor 0.00 0.00 0.00 1.00
+borderstyle "3D_BORDER"
+hovershader "menu_button_glow"
+rendermodel 1
+modeloffset "60 8 0"
+modelrotateoffset "0 0 0"
+modelangles "10 180 0"
+modelscale 1.0
+modelanim americanselectionidle
+font facfont-20
+
+}
+
+resource
+Button
+{
+name "model allied"
+rect 215 360 205 20
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 0.50 0.50 0.50 0.50
+borderstyle "3D_BORDER"
+hovershader "menu_button_glow"
+stuffcommand "playermodel 0"
+//title "Allied Model"
+font facfont-20
+
+}
+
+}
+resource
+button
+{
+title "Axis Model-SKIN"
+name "axis_model"
+rect 5 360 205 20
+fgcolor 1.00 0.00 0.00 1.00
+bgcolor 0.00 0.00 0.00 1.00
+borderstyle "3D_BORDER"
+hovershader "menu_button_glow"
+rendermodel 1
+modeloffset "60 -8 0"
+modelrotateoffset "0 0 0"
+modelangles "10 180 0"
+modelscale 1.0
+modelanim germanselectionidle
+font facfont-20
+
+}
+resource
+Button
+{
+name "axis_model"
+rect 5 360 205 20
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 0.50 0.50 0.50 0.50
+borderstyle "3D_BORDER"
+hovershader "menu_button_glow"
+stuffcommand "playermodel 1"
+//title "Axis Model"
+font facfont-20
+}
+
+}
+resource
+Button
+{
+title "QUIT"
+name "quit"
+rect 425 485 205 20
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 0.75 0.75 0.75 1.00
+borderstyle "3D_BORDER"
+stuffcommand "quit"
+font handle-18
+clicksound "musique/headshot.wav"
+hovershader "menu_button_glow"
+
+}
+resource
+Button
+{
+title "SPECTATOR"
+name "spectator"
+rect 425 435 205 20
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 0.75 0.75 0.75 1.00
+borderstyle "3D_BORDER"
+stuffcommand "spectator"
+clicksound "musique/laser2.wav"
+font handle-18
+hovershader "menu_button_glow"
+
+}
+resource
+Button
+{
+title "SUICIDE"
+name "suicide"
+rect 5 385 205 20
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 0.75 0.75 0.75 1.00
+borderstyle "3D_BORDER"
+stuffcommand "kill"
+clicksound "musique/headshot.wav"
+font handle-18
+hovershader "menu_button_glow"
+
+
+}
+resource
+Button
+{
+title "- APPLY -"
+name "close_menu"
+rect 320 635 310 20
+fgcolor 1.00 1.00 0.00 1.00 
+bgcolor 1.00 0.00 0.00 1.00
+borderstyle "3D_BORDER"
+stuffcommand "ui_applyplayermodel; ui_checkrestart; Popmenu 0"
+font facfont-20
+clicksound "musique/laser2.wav"
+hovershader "menu_button_glow"
+
+}
+
+
+resource
+Button
+{
+title "SERVERS"
+name "change_server"
+rect 450 585 180 20
+fgcolor 1.00 1.00 0.00 1.00 
+bgcolor 0.00 0.00 0.00 1.00
+borderstyle "RAISED"
+font facfont-20
+stuffcommand "wait 250; pushmenu browser"
+clicksound "musique/laser2.wav"
+hovershader "menu_button_glow"
+
+}
+resource
+Slider
+{
+title "Mouse"
+name "sensitivity_slider"
+rect 215 485 205 20
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 0.50 0.50 0.50 1.00
+borderstyle "NONE"
+linkcvar "sensitivity"
+shader "textures/menu/slider"
+setrange 1 20
+slidertype float
+stepsize 1
+
+}
+resource
+Label
+{
+title " Mouse Speed : "
+name "sensitivity"
+rect 5 485 205 20
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 1.00 1.00 0.00 1.00
+borderstyle "3D_BORDER"
+textalign left
+font handle-18
+
+}
+resource
+Label
+{
+title " Volume :"
+name "Default"
+rect 5 435 205 20
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 1.00 1.00 0.00 1.00
+borderstyle "3D_BORDER"
+clicksound "musique/laser2.wav"
+textalign left
+font handle-18
+
+}
+resource
+Slider
+{
+title "volume"
+name "Default"
+rect 215 435 205 20
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 0.50 0.50 0.50 1.00
+borderstyle "NONE"
+linkcvar "s_volume"
+shader "textures/menu/slider"
+slidertype float
+setrange 0 1
+stepsize 0.1
+
+
+}
+resource
+Button
+{
+title " - Cancel/Back -"
+name "deafult"
+rect 5 635 310 20
+fgcolor 1.00 1.00 0.00 1.00 
+bgcolor 1.00 0.00 0.00 1.00
+borderstyle "3D_BORDER"
+stuffcommand "popmenu 0"
+clicksound "musique/laser.wav"
+font facfont-20
+hovershader "menu_button_glow"
+
+}
+resource
+Label
+{
+title " Details :"
+name "eclairage_ecran_txt"
+rect 5 460 205 20
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 1.00 1.00 0.00 1.00
+borderstyle "3D_BORDER"
+textalign left
+font handle-18
+
+}
+resource
+Label
+{
+title "NAME :"
+name "name"
+rect 5 260 88 24
+fgcolor 1.00 1.00 0.00 1.00 
+bgcolor 1.00 0.00 0.00 1.00 
+borderstyle "3D_BORDER"
+font courier-18
+
+}
+resource
+Slider
+{
+title "Eclairage ecran"
+name "eclairage ecran"
+rect 215 460 205 20
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 0.50 0.50 0.50 1.00
+borderstyle "NONE"
+linkcvar "r_gamma"
+shader "textures/menu/slider"
+slidertype float
+setrange 0.5 3
+stepsize 0.1
+
+
+
+}
+resource
+Button
+{
+title "SPECTATOR"
+name "spectator"
+rect 215 385 205 20
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 0.75 0.75 0.75 1.00
+borderstyle "3D_BORDER"
+stuffcommand "spectator"
+clicksound "musique/laser2.wav"
+font facfont-20
+hovershader "menu_button_glow"
+
+}
+
+resource
+PulldownMenuContainer
+{
+title "SCREEN SIZE"
+name "Default"
+rect 5 285 100 20
+fgcolor 1.00 1.00 0.00 1.00 
+bgcolor 0.00 0.00 0.00 1.00
+borderstyle "3D_BORDER"
+font facfont-20
+addpopup "Screen" "1920*1200 Pixels" command "r_mode -1;r_customwidth 1920;r_customheight 1200;vid_restart"
+addpopup "Screen" "1920*1080 Pixels" command "r_mode -1;r_customwidth 1920;r_customheight 1080;vid_restart"
+addpopup "Screen" "1680*1050 Pixels" command "r_mode -1;r_customwidth 1680;r_customheight 1050;vid_restart"
+addpopup "Screen" "1600*1200 Pixels" command "r_mode -1;r_customwidth 1600;r_customheight 1200;vid_restart"
+addpopup "Screen" "1600*900 Pixels" command "r_mode -1;r_customwidth 1600;r_customheight 900;vid_restart"
+addpopup "Screen" "1440*900 Pixels" command "r_mode -1;r_customwidth 1440;r_customheight 900;vid_restart"
+addpopup "Screen" "1400*1050 Pixels" command "r_mode -1;r_customwidth 1400;r_customheight 1050;vid_restart"
+addpopup "Screen" "1366*768 Pixels" command "r_mode -1;r_customwidth 1366;r_customheight 768;vid_restart"
+addpopup "Screen" "1280*1024 Pixels" command "r_mode 8;vid_restart"
+addpopup "Screen" "1280*960 Pixels" command "r_mode -1;r_customwidth 1280;r_customheight 960;vid_restart"
+addpopup "Screen" "1280*800 Pixels" command "r_mode -1;r_customwidth 1280;r_customheight 800;vid_restart"
+addpopup "Screen" "1280*768 Pixels" command "r_mode -1;r_customwidth 1280;r_customheight 768;vid_restart"
+addpopup "Screen" "1280*720 Pixels" command "r_mode -1;r_customwidth 1280;r_customheight 720;vid_restart"
+addpopup "Screen" "1152*864 Pixels" command "r_mode 7;vid_restart"
+addpopup "Screen" "1024*768 Pixels" command "r_mode 6;vid_restart"
+addpopup "Screen" "960*720 Pixels" command "r_mode 4;vid_restart"
+addpopup "Screen" "800*600 Pixels" command "r_mode 5;vid_restart"
+addpopup "Screen" "640*480 Pixels" command "r_mode 3;vid_restart"
+addpopup "Screen" "512*384 Pixels" command "r_mode 2;vid_restart"
+addpopup "Screen" "400*300 Pixels" command "r_mode 1;vid_restart"
+font facfont-20
+}
+
+//
+
+resource
+button
+{
+title "HALF/FULL"
+name "Default"
+rect 110 285 100 20
+fgcolor 1.00 1.00 0.00 1.00 
+bgcolor 0.00 0.00 0.00 1.00
+borderstyle "3D_BORDER"
+stuffcommand "toggle r_fullscreen;vid_restart"
+hovershader "menu_button_glow"
+font facfont-20
+clicksound "musique/laser2.wav"
+}
+
+//
+
+resource
+button
+{
+title "Crosshair Menu"
+name "crosshair"
+rect 215 285 205 20
+fgcolor 1.00 0.00 0.00 1.00
+bgcolor 0.00 0.00 0.00 1.00
+borderstyle "3D_BORDER"
+stuffcommand "wait 250;pushmenu major44"
+clicksound "musique/laser2.wav"
+font handle-18
+hovershader "menu_button_glow"
+}
+
+//
+
+resource
+button
+{
+title "FPS"
+name "Default"
+rect 425 285 100 20
+fgcolor 1.00 1.00 0.00 1.00 
+bgcolor 0.00 0.00 0.00 1.00
+borderstyle "3D_BORDER"
+stuffcommand "toggle fps;ui_console 1"
+hovershader "menu_button_glow"
+font facfont-20
+clicksound "musique/laser.wav"
+}
+
+//
+
+resource
+button
+{
+title "LAGOMETAR"
+name "Default"
+rect 530 285 100 20
+fgcolor 1.00 1.00 0.00 1.00 
+bgcolor 0.00 0.00 0.00 1.00
+borderstyle "3D_BORDER"
+stuffcommand "toggle cg_lagometer;ui_console 1"
+hovershader "menu_button_glow"
+font facfont-20
+clicksound "musique/laser2.wav"
+}
+
+
+/////
+
+/////
+
+resource
+PulldownMenuContainer
+{
+title "Connect To Public Server"
+name "Default"
+rect 5 310 205 20
+fgcolor 1.00 1.00 0.00 1.00 
+bgcolor 1.00 0.00 0.00 1.00 
+borderstyle "3D_BORDER"
+clicksound "musique/headshot.wav"
+hovershader "menu_button_glow"
+addpopup "Connect To Public Server" "5.9.111.123:12203 @ SH Full F11" command "password Z4yaf7s6TR;connect 5.9.111.123:12203"
+addpopup "Connect To Public Server" "176.9.101.70:12203 @ SH Demo Malta" command "password Z4yaf7s6TR;connect 176.9.101.70"
+addpopup "Connect To Public Server" "176.9.101.70:13203 @ BT Full F10" command "password Z4yaf7s6TR;connect 176.9.101.70:13203"
+
+addpopup "Connect To Public Server" "5.9.207.77:12203  @ FootBall server " command "password Z4yaf7s6TR;connect 5.9.207.77:12203"
+font facfont-20
+}
+
+resource
+PulldownMenuContainer
+{
+title "Connect To Match Server"
+name "Default"
+rect 215 310 205 20
+fgcolor 1.00 1.00 0.00 1.00 
+bgcolor 1.00 0.00 0.00 1.00 
+borderstyle "3D_BORDER"
+addpopup "Connect To Match Server" "94.198.251.41:12203  @ Match server" command "password match;connect 94.198.251.41:12203 "
+font facfont-20
+clicksound "musique/headshot.wav"
+hovershader "menu_button_glow"
+
+}
+resource
+label
+{
+title "MENU"
+name "message"
+rect 425 310 205 20
+fgcolor 1.00 0.00 0.00 1.00
+bgcolor 0.00 0.00 0.00 1.00
+borderstyle "RAISED"
+font facfont-20
+}
+/////
+
+resource
+label
+{
+title ""
+name "Default"
+rect 5 185 625 20
+fgcolor 0.00 0.00 0.00 0.00 
+bgcolor 0.00 0.00 0.00 1.00
+borderstyle "RAISED"
+}
+
+/////
+
+resource
+label
+{
+title "={2A?}= Private User Tool v1.0.2, 5/Feb/2014"
+
+// Version number changing:
+// 1. number: If a completely new design comes out
+// 2. number: If something has been added or deleted
+// 3. number: If something has been corrected (password, mistake etc...)
+
+name "message"
+rect 5 210 625 20
+fgcolor 1.00 1.00 0.00 1.00 
+bgcolor 0.00 0.00 0.00 1.00
+borderstyle "RAISED"
+font facfont-20
+}
+
+/////
+
+resource
+label
+{
+title ""
+name "Default"
+rect 5 235 625 20
+fgcolor 0.00 0.00 0.00 0.00 
+bgcolor 0.00 0.00 0.00 1.00
+borderstyle "RAISED"
+}
+
+/////
+
+resource
+Label
+{
+title "By Sean_Paul"
+name "message"
+rect 320 260 310 20
+fgcolor 1.00 1.00 0.00 1.00 
+bgcolor 0.00 0.00 0.00 1.00
+borderstyle "RAISED"
+font facfont-20
+}
+
+resource
+Label
+{
+title "Say To Team:"
+name "message"
+rect 5 510 205 20
+fgcolor 1.00 1.00 1.00 1.00 
+bgcolor 0.00 0.00 0.00 1.00
+borderstyle "RAISED"
+font facfont-20
+}
+
+//
+
+resource
+Label
+{
+title "Say To All:"
+name "message"
+rect 215 510 205 20
+fgcolor 1.00 1.00 1.00 1.00 
+bgcolor 0.00 0.00 0.00 1.00
+borderstyle "RAISED"
+font facfont-20
+}
+
+//
+
+resource
+Label
+{
+title "Say To Private:"
+name "message"
+rect 425 510 205 20
+fgcolor 1.00 1.00 1.00 1.00 
+bgcolor 0.00 0.00 0.00 1.00
+borderstyle "RAISED"
+font facfont-20
+}
+
+resource
+Field
+{
+title "Field"
+name "Default"
+rect 5 535 205 20
+fgcolor 0.000 0.000 0.000 1.000
+bgcolor 1.000 1.000 1.000 1.000
+borderstyle "INDENT_BORDER"
+clicksound "sound/menu/apply.wav"
+stuffcommand "teamsay "
+font facfont-20
+}
+
+//
+
+resource
+Field
+{
+title "Field"
+name "Default"
+rect 215 535 205 20
+fgcolor 0.000 0.000 0.000 1.000
+bgcolor 1.000 1.000 1.000 1.000
+borderstyle "INDENT_BORDER"
+clicksound "sound/menu/apply.wav"
+stuffcommand "say "
+font facfont-20
+}
+
+//
+
+
+}
+
+resource
+PulldownMenuContainer
+{
+title "Private Chat To Client"
+name "Default"
+rect 425 535 205 20
+fgcolor 1.00 0.00 0.00 1.00 
+bgcolor 0.00 0.00 0.00 1.00
+borderstyle "3D_BORDER"
+hovershader "menu_button_glow"
+addpopup "Private Chat To Client" "Client-Nr 0" command "wisper 1"
+addpopup "Private Chat To Client" "Client-Nr 1" command "wisper 2"
+addpopup "Private Chat To Client" "Client-Nr 2" command "wisper 3"
+addpopup "Private Chat To Client" "Client-Nr 3" command "wisper 4"
+addpopup "Private Chat To Client" "Client-Nr 4" command "wisper 5"
+addpopup "Private Chat To Client" "Client-Nr 5" command "wisper 6"
+addpopup "Private Chat To Client" "Client-Nr 6" command "wisper 7"
+addpopup "Private Chat To Client" "Client-Nr 7" command "wisper 8"
+addpopup "Private Chat To Client" "Client-Nr 8" command "wisper 9"
+addpopup "Private Chat To Client" "Client-Nr 9" command "wisper 10"
+addpopup "Private Chat To Client" "Client-Nr 10" command "wisper 11"
+addpopup "Private Chat To Client" "Client-Nr 11" command "wisper 12"
+addpopup "Private Chat To Client" "Client-Nr 12" command "wisper 13"
+addpopup "Private Chat To Client" "Client-Nr 13" command "wisper 14"
+addpopup "Private Chat To Client" "Client-Nr 14" command "wisper 15"
+addpopup "Private Chat To Client" "Client-Nr 15" command "wisper 16"
+addpopup "Private Chat To Client" "Client-Nr 16" command "wisper 17"
+addpopup "Private Chat To Client" "Client-Nr 17" command "wisper 18"
+addpopup "Private Chat To Client" "Client-Nr 18" command "wisper 19"
+addpopup "Private Chat To Client" "Client-Nr 19" command "wisper 20"
+addpopup "Private Chat To Client" "Client-Nr 20" command "wisper 21"
+addpopup "Private Chat To Client" "Client-Nr 21" command "wisper 22"
+addpopup "Private Chat To Client" "Client-Nr 22" command "wisper 23"
+addpopup "Private Chat To Client" "Client-Nr 23" command "wisper 24"
+addpopup "Private Chat To Client" "Client-Nr 24" command "wisper 25"
+addpopup "Private Chat To Client" "Client-Nr 25" command "wisper 26"
+addpopup "Private Chat To Client" "Client-Nr 26" command "wisper 27"
+addpopup "Private Chat To Client" "Client-Nr 27" command "wisper 28"
+addpopup "Private Chat To Client" "Client-Nr 28" command "wisper 29"
+addpopup "Private Chat To Client" "Client-Nr 29" command "wisper 30"
+addpopup "Private Chat To Client" "Client-Nr 30" command "wisper 31"
+addpopup "Private Chat To Client" "Client-Nr 31" command "wisper 32"
+addpopup "Private Chat To Client" "Client-Nr 32" command "wisper 33"
+addpopup "Private Chat To Client" "Client-Nr 33" command "wisper 34"
+addpopup "Private Chat To Client" "Client-Nr 34" command "wisper 35"
+addpopup "Private Chat To Client" "Client-Nr 35" command "wisper 36"
+addpopup "Private Chat To Client" "Client-Nr 36" command "wisper 37"
+addpopup "Private Chat To Client" "Client-Nr 37" command "wisper 38"
+addpopup "Private Chat To Client" "Client-Nr 38" command "wisper 39"
+addpopup "Private Chat To Client" "Client-Nr 39" command "wisper 40"
+addpopup "Private Chat To Client" "Client-Nr 40" command "wisper 41"
+addpopup "Private Chat To Client" "Client-Nr 41" command "wisper 42"
+addpopup "Private Chat To Client" "Client-Nr 42" command "wisper 43"
+addpopup "Private Chat To Client" "Client-Nr 43" command "wisper 44"
+addpopup "Private Chat To Client" "Client-Nr 44" command "wisper 45"
+addpopup "Private Chat To Client" "Client-Nr 45" command "wisper 46"
+addpopup "Private Chat To Client" "Client-Nr 46" command "wisper 47"
+addpopup "Private Chat To Client" "Client-Nr 47" command "wisper 48"
+addpopup "Private Chat To Client" "Client-Nr 48" command "wisper 49"
+addpopup "Private Chat To Client" "Client-Nr 49" command "wisper 50"
+addpopup "Private Chat To Client" "Client-Nr 50" command "wisper 51"
+addpopup "Private Chat To Client" "Client-Nr 51" command "wisper 52"
+addpopup "Private Chat To Client" "Client-Nr 52" command "wisper 53"
+addpopup "Private Chat To Client" "Client-Nr 53" command "wisper 54"
+addpopup "Private Chat To Client" "Client-Nr 54" command "wisper 55"
+addpopup "Private Chat To Client" "Client-Nr 55" command "wisper 56"
+addpopup "Private Chat To Client" "Client-Nr 56" command "wisper 57"
+addpopup "Private Chat To Client" "Client-Nr 57" command "wisper 58"
+addpopup "Private Chat To Client" "Client-Nr 58" command "wisper 59"
+addpopup "Private Chat To Client" "Client-Nr 59" command "wisper 60"
+addpopup "Private Chat To Client" "Client-Nr 60" command "wisper 61"
+addpopup "Private Chat To Client" "Client-Nr 61" command "wisper 62"
+addpopup "Private Chat To Client" "Client-Nr 62" command "wisper 63"
+addpopup "Private Chat To Client" "Client-Nr 63" command "wisper 64"
+addpopup "Private Chat To Client" "Client-Nr 64" command "wisper 65"
+
+
+
+}
+resource
+Label
+{
+title "OPTIONS"
+name "message"
+rect 5 410 414 20
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 0.35 0.35 0.35 1.00
+borderstyle "3D_BORDER"
+font facfont-20
+
+}
+/////
+}
+resource
+CheckBox
+{
+title "Force Models"
+name "Default"
+rect 5 585 180 20
+fgcolor 1.00 1.00 0.00 1.00 
+bgcolor 0.00 0.00 0.00 1.00
+linkcvar "cg_forceModel"
+clicksound "musique/laser2.wav"
+borderstyle "RAISED"
+font facfont-20
+checked_shader "textures/menu/checkbox_checked"
+unchecked_shader "textures/menu/checkbox_unchecked"
+hovershader "menu_button_glow"
+
+}
+
+//
+
+resource
+Button
+{
+title "Disconnect From The Server"
+name "Default"
+rect 190 585 255 20
+fgcolor 1.00 1.00 0.00 1.00 
+bgcolor 0.00 0.00 0.00 1.00
+borderstyle "INDENT_BORDER"
+clicksound "musique/headshot.wav"
+font facfont-20
+stuffcommand "Disconnect"
+hovershader "menu_button_glow"
+}
+
+//
+
+
+}
+resource
+Label
+{
+title "TOOLS"
+name "message"
+rect 5 560 625 20
+fgcolor 1.00 1.00 1.00 1.00 
+bgcolor 0.00 0.00 0.00 1.00
+borderstyle "RAISED"
+font facfont-20
+
+}
+resource
+Button
+{
+title "Call Vote"
+name "callvotebutton"
+rect 5 610 180 20
+fgcolor 1.00 1.00 0.00 1.00 
+bgcolor 1.00 0.00 0.00 1.00 
+borderstyle "3D_BORDER"
+shader "menu_button_trans"
+clicksound "sound/menu/apply.wav"
+stuffcommand "popmenu 0;wait 250;pushcallvote"
+ordernumber 6
+hovershader "menu_button_glow"
+font facfont-20
+}
+
+
+resource
+Button
+{
+name "votebutton"
+rect 5 610 180 20
+fgcolor 1.00 1.00 1.00 1.00
+bgcolor 0.17 0.17 0.17 1.00
+borderstyle "3D_BORDER"
+shader "textures/mohmenu/vote_button"
+clicksound "sound/menu/apply.wav"
+stuffcommand "popmenu 0;wait 250;pushvote"
+font "facfont-20"
+ordernumber 6
+disable
+}
+
+
+resource
+Label
+{
+//title "You've Already Voted"
+name "alreadyvoted"
+rect 5 610 180 20
+fgcolor 1.00 1.00 1.00 1.00
+bgcolor 0.17 0.17 0.17 1.00
+shader "textures/mohmenu/already_voted"
+borderstyle "3D_BORDER"
+disable
+}
+
+
+resource
+Label
+{
+name "cantvote"
+rect 5 610 180 20
+fgcolor 1.00 1.00 1.00 1.00
+bgcolor 0.17 0.17 0.17 1.00
+shader "textures/mohmenu/cant_vote"
+borderstyle "3D_BORDER"
+disable
+}
+
+
+
+
+}
+resource
+Button
+{
+title "Notepad"
+name "matrice skin"
+rect 450 610 180 20
+stuffcommand "notepad"
+clicksound "musique/laser2.wav"
+fgcolor 1.00 1.00 0.00 1.00 
+bgcolor 0.00 0.00 0.00 1.00
+borderstyle "RAISED"
+font facfont-20
+hovershader "menu_button_glow"
+
+}
+
+}
+resource
+Button
+{
+title "MP3 PLAYER"
+name "Default"
+rect 190 610 255 20
+fgcolor 1.00 1.00 0.00 1.00 
+bgcolor 0.00 0.00 0.00 1.00
+borderstyle "RAISED"
+font facfont-20
+hovershader "menu_button_glow"
+stuffcommand "wait 250; pushmenu systemp3"
+clicksound "musique/laser2.wav"
+}
+
+
+resource
+label
+{
+title ""
+shader "textures/mohmenu/logo.jpg"
+name ""
+rect 5 5 625 177
+fgcolor 1.00 1.00 0.00 1.00 
+bgcolor 0.00 0.00 0.00 1.00
+borderstyle "RAISED"
+font facfont-20
+}
+
+}
+end.

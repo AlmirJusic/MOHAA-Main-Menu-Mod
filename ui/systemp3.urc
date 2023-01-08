@@ -1,0 +1,381 @@
+menu "systemp3" 606 254 NONE 0
+bgcolor 0.00 0.00 1.00 1.00
+borderstyle "3D_BORDER"
+
+resource
+Label
+{
+name "Default"
+rect 2 2 600 250
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 0.50 0.50 0.50 1.00
+borderstyle "3D_BORDER"
+}
+resource
+Button
+{
+name "img_header"
+rect 3 2 595 30
+fgcolor 1.00 1.00 1.00 1.00
+bgcolor 0.00 0.00 0.00 1.00
+borderstyle "RAISED"
+
+clicksound "musique/ty.WAV"
+shader "textures/bgimg.tga"
+
+}
+resource
+Button
+{
+name "img_footer"
+rect 3 217 595 30
+fgcolor 1.00 1.00 1.00 1.00
+bgcolor 0.00 0.00 0.00 1.00
+borderstyle "RAISED"
+shader "textures/footerimg.tga"
+clicksound "musique/health.wav"
+
+}
+resource
+Button
+{
+title "RETOUR"
+name "Default"
+rect 3 192 595 23
+fgcolor 1.00 1.00 1.00 1.00
+bgcolor 0.35 0.35 0.35 1.00
+borderstyle "3D_BORDER"
+stuffcommand "popmenu 0; wait 100; pushmenu dm_main"
+clicksound "musique/laser2.wav"
+font courier-18
+
+}
+resource
+Label
+{
+title "LECTEUR MP3"
+name "Default"
+rect 3 34 595 24
+fgcolor 1.00 1.00 1.00 1.00
+bgcolor 0.35 0.35 0.35 1.00
+borderstyle "3D_BORDER"
+font courier-18
+
+}
+resource
+Button
+{
+title "1"
+name "Default"
+rect 3 60 100 24
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 0.75 0.75 0.75 1.00
+borderstyle "3D_BORDER"
+stuffcommand "mp3_1"
+font courier-18
+
+}
+resource
+Label
+{
+title "Volume Musique"
+name "Default"
+rect 202 60 200 24
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 1.00 1.00 1.00 1.00
+borderstyle "3D_BORDER"
+font courier-18
+
+
+}
+resource
+Button
+{
+title "4"
+name "Default"
+rect 106 86 93 25
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 0.75 0.75 0.75 1.00
+borderstyle "3D_BORDER"
+stuffcommand "mp3_4"
+font courier-18
+
+}
+resource
+Slider
+{
+name "volume_general"
+rect 202 86 200 24
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 0.50 0.50 0.50 1.00
+borderstyle "RAISED"
+linkcvar "s_volume"
+shader "textures/menu/slider"
+slidertype float
+setrange 0 1
+stepsize 0.1
+}
+resource
+Label
+{
+title "Volume General"
+name "Default"
+rect 202 113 200 27
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 1.00 1.00 1.00 1.00
+borderstyle "3D_BORDER"
+font courier-18
+}
+resource
+Button
+{
+title "STOP"
+name "Default"
+rect 201 168 200 23
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 1.00 1.00 1.00 1.00
+borderstyle "3D_BORDER"
+stuffcommand "stopmp3"
+font courier-18
+
+}
+resource
+Button
+{
+title "11"
+name "Default"
+rect 405 60 98 24
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 0.75 0.75 0.75 1.00
+borderstyle "3D_BORDER"
+stuffcommand "mp3_11"
+font courier-18
+
+}
+resource
+Button
+{
+title "12"
+name "Default"
+rect 505 60 93 24
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 0.75 0.75 0.75 1.00
+borderstyle "3D_BORDER"
+stuffcommand "mp3_12"
+font courier-18
+
+}
+resource
+Button
+{
+title "13"
+name "Default"
+rect 405 86 98 24
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 0.75 0.75 0.75 1.00
+borderstyle "3D_BORDER"
+stuffcommand "mp3_13"
+font courier-18
+}
+resource
+Button
+{
+title "14"
+name "Default"
+rect 505 86 93 24
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 0.75 0.75 0.75 1.00
+borderstyle "3D_BORDER"
+stuffcommand "mp3_14"
+font courier-18
+}
+resource
+Button
+{
+title "15"
+name "Default"
+rect 405 113 98 27
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 0.75 0.75 0.75 1.00
+borderstyle "3D_BORDER"
+stuffcommand "mp3_15"
+font courier-18
+}
+resource
+Button
+{
+title "16"
+name "Default"
+rect 505 113 93 27
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 0.75 0.75 0.75 1.00
+borderstyle "3D_BORDER"
+stuffcommand "mp3_16"
+font courier-18
+}
+resource
+Button
+{
+title "18"
+name "Default"
+rect 505 143 93 25
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 0.75 0.75 0.75 1.00
+borderstyle "3D_BORDER"
+stuffcommand "mp3_18"
+font courier-18
+}
+resource
+Button
+{
+title "20"
+name "Default"
+rect 505 169 93 22
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 0.75 0.75 0.75 1.00
+borderstyle "3D_BORDER"
+stuffcommand "mp3_20"
+font courier-18
+}
+resource
+Button
+{
+title "17"
+name "Default"
+rect 405 143 98 25
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 0.75 0.75 0.75 1.00
+borderstyle "3D_BORDER"
+stuffcommand "mp3_17"
+font courier-18
+}
+resource
+Button
+{
+title "19"
+name "Default"
+rect 405 169 98 22
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 0.75 0.75 0.75 1.00
+borderstyle "3D_BORDER"
+stuffcommand "mp3_19"
+font courier-18
+}
+resource
+Button
+{
+title "6"
+name "Default"
+rect 106 113 93 27
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 0.75 0.75 0.75 1.00
+borderstyle "3D_BORDER"
+stuffcommand "mp3_6"
+font courier-18
+
+}
+resource
+Button
+{
+title "5"
+name "Default"
+rect 3 112 100 28
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 0.75 0.75 0.75 1.00
+borderstyle "3D_BORDER"
+stuffcommand "mp3_5"
+font courier-18
+
+}
+resource
+Slider
+{
+name "musique_volume"
+rect 202 143 199 24
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 0.50 0.50 0.50 1.00
+borderstyle "RAISED"
+linkcvar "s_musicvolume"
+shader "textures/menu/slider"
+slidertype float
+setrange 0 1
+stepsize 0.1
+}
+resource
+Button
+{
+title "8"
+name "Default"
+rect 106 143 93 24
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 0.75 0.75 0.75 1.00
+borderstyle "3D_BORDER"
+stuffcommand "mp3_8"
+font courier-18
+
+}
+resource
+Button
+{
+title "10"
+name "Default"
+rect 106 168 93 23
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 0.75 0.75 0.75 1.00
+borderstyle "3D_BORDER"
+stuffcommand "mp3_10"
+font courier-18
+
+}
+resource
+Button
+{
+title "9"
+name "Default"
+rect 3 168 100 23
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 0.75 0.75 0.75 1.00
+borderstyle "3D_BORDER"
+stuffcommand "mp3_9"
+font courier-18
+
+}
+resource
+Button
+{
+title "7"
+name "Default"
+rect 3 143 100 24
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 0.75 0.75 0.75 1.00
+borderstyle "3D_BORDER"
+stuffcommand "mp3_7"
+font courier-18
+
+}
+resource
+Button
+{
+title "3"
+name "Default"
+rect 3 86 100 24
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 0.75 0.75 0.75 1.00
+borderstyle "3D_BORDER"
+stuffcommand "mp3_3"
+font courier-18
+
+}
+resource
+Button
+{
+title "2"
+name "Default"
+rect 106 60 93 24
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 0.75 0.75 0.75 1.00
+borderstyle "3D_BORDER"
+font courier-18
+stuffcommand "mp3_2"
+}
+end.

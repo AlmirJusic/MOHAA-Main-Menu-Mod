@@ -1,0 +1,1496 @@
+//menu "crosshairs" 348 368 NONE 2
+//align centerx centery   //top
+//bgcolor 0 0 0 0
+//borderstyle NONE
+//This menu done by *>DM<_Maj_@ss}{ole
+
+
+menu "crosshairs" 1022 766 from_top 0.5
+bgcolor 0 0 0 0  //change to zero when done
+//borderstyle NONE
+align center
+align center
+
+////////////////////////////////////////////////////left side/////////////////////////////
+// 1-18  in this block 
+resource
+Label
+{
+name "Default"
+rect 0 0 150 766  //blue box on left,  first and 2nd zero x and y start location, second set are size of box
+fgcolor 1.00 1.00 1.00 1.00
+bgcolor 0.11 0.13 0.37 0.75
+borderstyle "3D_BORDER"
+}
+
+
+
+
+
+
+// top middle picture
+resource
+Label
+{
+name "Default"
+rect 200 0 622 200  
+fgcolor 1.00 1.00 1.00 1.00
+bgcolor 0.11 0.13 0.37 0.75
+borderstyle "3D_BORDER"
+shader "textures/raptor.jpg"
+}
+
+
+// back button
+resource
+button
+{
+title "Back"
+name "Default"
+rect 200 221 149 19  
+fgcolor 0.00 0.00 0.00 1.00     //black font
+bgcolor 0.0 2.0 0.0 1.00       //lime green
+borderstyle "3D_BORDER"
+stuffcommand "pushmenu major44;wait 100;popmenu 0"
+shader "menu_button_trans"
+hovershader "menu_button_glow"
+clicksound "textures/RiflemanPissed1.wav"  
+font facfont-20
+}
+
+// exit
+resource
+button
+{
+title "Exit"
+name "Default"
+rect 672 221 149 19  
+fgcolor 0.00 0.00 0.00 1.00     //black font
+bgcolor 0.0 2.0 0.0 1.00       //lime green
+borderstyle "3D_BORDER"
+stuffcommand "togglemenu major44"
+shader "menu_button_trans"
+hovershader "menu_button_glow"
+//clicksound "sound/weapons/foley/m1_ping.wav"  needs wait cmd
+font facfont-20
+}
+
+
+
+
+// Original crosshair
+resource
+button
+{
+title "Original crosshair"
+name "Default"
+rect 441 242 149 19  //359
+fgcolor 0.00 0.00 0.00 1.00    ///black font
+bgcolor 2.00 2.00 0.00 1.00   //yellow 
+borderstyle "3D_BORDER"
+stuffcommand "pushmenu major44;wait 100;popmenu 0"
+shader "menu_button_trans"
+hovershader "menu_button_glow"
+clicksound "textures/headshot2.wav"
+stuffcommand "cg_crosshair textures/hud/crosshair.tga"
+
+}
+
+resource
+Button
+{
+title "1"
+name "Default"
+rect 1 1 149 19
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 0.00 2.00 2.00 1.00
+borderstyle "3D_BORDER"
+hovershader "menu_button_glow"
+clicksound "sound/weapons/foley/m1_ping.wav"
+stuffcommand "cg_crosshair textures/cross/1.tga"
+
+}
+
+resource
+Label
+{
+name "Defaultcross1"
+rect 76 21 16 16
+//fgcolor 0.00 0.00 0.00 1.00
+//bgcolor 0.50 0.50 0.50 0.00
+borderstyle "NONE"
+shader textures/cross/1.tga
+
+}
+
+resource
+Button
+{
+title "2"
+name "Default"
+rect 1 43 149 19   //100 15 60 20
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 0.00 2.00 2.00 1.00  //1.00 1.00 1.00 1.00
+borderstyle "3D_BORDER"
+hovershader "menu_button_glow"
+clicksound "sound/weapons/foley/m1_ping.wav"
+stuffcommand "cg_crosshair textures/cross/2.tga"
+
+}
+
+//0.00 2.00 2.00 1.00  turquoise
+
+resource
+Label
+{
+name "Default"
+rect 76 64 16 16
+//fgcolor 0.00 0.00 0.00 1.00
+//bgcolor 0.50 0.50 0.50 0.00
+borderstyle "NONE"
+shader textures/cross/2.tga
+
+}
+
+resource
+Button
+{
+title "3"
+name "Default"
+rect 1 85 149 19
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 0.00 2.00 2.00 1.00
+borderstyle "3D_BORDER"
+hovershader "menu_button_glow"
+clicksound "sound/weapons/foley/m1_ping.wav"
+stuffcommand "cg_crosshair textures/cross/3.tga"
+
+}
+
+resource
+Label
+{
+name "Default"
+rect 76 106 16 16
+//fgcolor 0.00 0.00 0.00 1.00
+//bgcolor 0.50 0.50 0.50 0.00
+borderstyle "NONE"
+shader textures/cross/3.tga
+
+}
+
+resource
+Button
+{
+title "4"
+name "Default"
+rect 1 127 149 19
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 0.00 2.00 2.00 1.00
+borderstyle "3D_BORDER"
+hovershader "menu_button_glow"
+clicksound "sound/weapons/foley/m1_ping.wav"
+stuffcommand "cg_crosshair textures/cross/4.tga"
+
+}
+
+resource
+Label
+{
+name "Default"
+rect 76 148 16 16
+//fgcolor 0.00 0.00 0.00 1.00
+//bgcolor 0.50 0.50 0.50 0.00
+borderstyle "NONE"
+shader textures/cross/4.tga
+
+}
+
+resource
+Button
+{
+title "5"
+name "Default"
+rect 1 169 149 19
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 0.00 2.00 2.00 1.00
+borderstyle "3D_BORDER"
+hovershader "menu_button_glow"
+clicksound "sound/weapons/foley/m1_ping.wav"
+stuffcommand "cg_crosshair textures/cross/5.tga"
+
+}
+
+resource
+Label
+{
+name "Default"
+rect 76 190 16 16
+//fgcolor 0.00 0.00 0.00 1.00
+//bgcolor 0.50 0.50 0.50 0.00
+borderstyle "NONE"
+shader textures/cross/5.tga
+}
+
+
+resource
+Button
+{
+title "6"
+name "Default"
+rect 1 211 149 19
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 0.00 2.00 2.00 1.00
+borderstyle "3D_BORDER"
+hovershader "menu_button_glow"
+clicksound "sound/weapons/foley/m1_ping.wav"
+stuffcommand "cg_crosshair textures/cross/6.tga"
+
+}
+
+resource
+Label
+{
+name "Default"
+rect 76 232 16 16
+//fgcolor 0.00 0.00 0.00 1.00
+//bgcolor 0.50 0.50 0.50 0.00
+borderstyle "NONE"
+shader textures/cross/6.tga
+
+}
+
+resource
+Button
+{
+title "7"
+name "Default"
+rect 1 253 149 19
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 0.00 2.00 2.00 1.00
+borderstyle "3D_BORDER"
+hovershader "menu_button_glow"
+clicksound "sound/weapons/foley/m1_ping.wav"
+stuffcommand "cg_crosshair textures/cross/7.tga"
+
+}
+
+resource
+Label
+{
+name "Default"
+rect 76 274 16 16
+//fgcolor 0.00 0.00 0.00 1.00
+//bgcolor 0.50 0.50 0.50 0.00
+borderstyle "NONE"
+shader textures/cross/7.tga
+
+}
+
+
+resource
+Button
+{
+title "8"
+name "Default"
+rect 1 295 149 19
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 0.00 2.00 2.00 1.00
+borderstyle "3D_BORDER"
+hovershader "menu_button_glow"
+clicksound "sound/weapons/foley/m1_ping.wav"
+stuffcommand "cg_crosshair textures/cross/8.tga"
+
+}
+
+resource
+Label
+{
+name "Default"
+rect 76 316 16 16
+//fgcolor 0.00 0.00 0.00 1.00
+//bgcolor 0.50 0.50 0.50 0.00
+borderstyle "NONE"
+shader textures/cross/8.tga
+
+}
+
+resource
+Button
+{
+title "9"
+name "Default"
+rect 1 337 149 19
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 0.00 2.00 2.00 1.00
+borderstyle "3D_BORDER"
+hovershader "menu_button_glow"
+clicksound "sound/weapons/foley/m1_ping.wav"
+stuffcommand "cg_crosshair textures/cross/9.tga"
+
+}
+
+resource
+Label
+{
+name "Default"
+rect 76 358 16 16
+//fgcolor 0.00 0.00 0.00 1.00
+//bgcolor 0.50 0.50 0.50 0.00
+borderstyle "NONE"
+shader textures/cross/9.tga
+
+}
+
+
+resource
+Button
+{
+title "10"
+name "Default"
+rect 1 379 149 19
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 0.00 2.00 2.00 1.00
+borderstyle "3D_BORDER"
+hovershader "menu_button_glow"
+clicksound "sound/weapons/foley/m1_ping.wav"
+stuffcommand "cg_crosshair textures/cross/10.tga"
+
+}
+
+
+resource
+Label
+{
+name "Default"
+rect 76 400 16 16
+//fgcolor 0.00 0.00 0.00 1.00
+//bgcolor 0.50 0.50 0.50 0.00
+borderstyle "NONE"
+shader textures/cross/10.tga
+
+}
+
+resource
+Button
+{
+title "11"
+name "Default"
+rect 1 421 149 19
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 0.00 2.00 2.00 1.00
+borderstyle "3D_BORDER"
+hovershader "menu_button_glow"
+clicksound "sound/weapons/foley/m1_ping.wav"
+stuffcommand "cg_crosshair textures/cross/11.tga"
+
+}
+
+
+resource
+Label
+{
+name "Default"
+rect 76 442 16 16
+//fgcolor 0.00 0.00 0.00 1.00
+//bgcolor 0.50 0.50 0.50 0.00
+borderstyle "NONE"
+shader textures/cross/11.tga
+
+}
+
+
+resource
+Button
+{
+title "12"
+name "Default"
+rect 1 463 149 19
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 0.00 2.00 2.00 1.00
+borderstyle "3D_BORDER"
+hovershader "menu_button_glow"
+clicksound "sound/weapons/foley/m1_ping.wav"
+stuffcommand "cg_crosshair textures/cross/12.tga"
+
+}
+
+
+resource
+Label
+{
+name "Default"
+rect 76 484 16 16
+//fgcolor 0.00 0.00 0.00 1.00
+//bgcolor 0.50 0.50 0.50 0.00
+borderstyle "NONE"
+shader textures/cross/12.tga
+
+}
+
+
+
+resource
+Button
+{
+title "13"
+name "Default"
+rect 1 505 149 19
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 0.00 2.00 2.00 1.00
+borderstyle "3D_BORDER"
+hovershader "menu_button_glow"
+clicksound "sound/weapons/foley/m1_ping.wav"
+stuffcommand "cg_crosshair textures/cross/13.tga"
+
+}
+
+
+resource
+Label
+{
+name "Default"
+rect 76 526 16 16
+//fgcolor 0.00 0.00 0.00 1.00
+//bgcolor 0.50 0.50 0.50 0.00
+borderstyle "NONE"
+shader textures/cross/13.tga
+
+}
+
+
+
+resource
+Button
+{
+title "14"
+name "Default"
+rect 1 547 149 19
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 0.00 2.00 2.00 1.00
+borderstyle "3D_BORDER"
+hovershader "menu_button_glow"
+clicksound "sound/weapons/foley/m1_ping.wav"
+stuffcommand "cg_crosshair textures/cross/14.tga"
+}
+
+
+resource
+Label
+{
+name "Default"
+rect 76 568 16 16
+//fgcolor 0.00 0.00 0.00 1.00
+//bgcolor 0.50 0.50 0.50 0.00
+borderstyle "NONE"
+shader textures/cross/14.tga
+
+}
+
+
+
+resource
+Button
+{
+title "15"
+name "Default"
+rect 1 589 149 19
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 0.00 2.00 2.00 1.00
+borderstyle "3D_BORDER"
+hovershader "menu_button_glow"
+clicksound "sound/weapons/foley/m1_ping.wav"
+stuffcommand "cg_crosshair textures/cross/15.tga"
+
+}
+
+
+
+
+
+resource
+Label
+{
+name "Default"
+rect 76 610 16 16
+//fgcolor 0.00 0.00 0.00 1.00
+//bgcolor 0.50 0.50 0.50 0.00
+borderstyle "NONE"
+shader textures/cross/15.tga
+
+}
+
+
+resource
+Button
+{
+title "16"
+name "Default"
+rect 1 631 149 19
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 0.00 2.00 2.00 1.00
+borderstyle "3D_BORDER"
+hovershader "menu_button_glow"
+clicksound "sound/weapons/foley/m1_ping.wav"
+stuffcommand "cg_crosshair textures/cross/16.tga"
+}
+
+
+
+
+resource
+Label
+{
+name "Default"
+rect 76 652 16 16
+//fgcolor 0.00 0.00 0.00 1.00
+//bgcolor 0.50 0.50 0.50 0.00
+borderstyle "NONE"
+shader textures/cross/16.tga
+
+}
+
+
+resource
+Button
+{
+title "17"
+name "Default"
+rect 1 673 149 19
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 0.00 2.00 2.00 1.00
+borderstyle "3D_BORDER"
+hovershader "menu_button_glow"
+clicksound "sound/weapons/foley/m1_ping.wav"
+stuffcommand "cg_crosshair textures/cross/17.tga"
+}
+
+
+
+
+resource
+Label
+{
+name "Default"
+rect 76 694 16 16
+//fgcolor 0.00 0.00 0.00 1.00
+//bgcolor 0.50 0.50 0.50 0.00
+borderstyle "NONE"
+shader textures/cross/17.tga
+
+}
+
+
+resource
+Button
+{
+title "18"
+name "Default"
+rect 1 715 149 19
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 0.00 2.00 2.00 1.00
+borderstyle "3D_BORDER"
+hovershader "menu_button_glow"
+clicksound "sound/weapons/foley/m1_ping.wav"
+stuffcommand "cg_crosshair textures/cross/18.tga"
+}
+
+
+
+
+resource
+Label
+{
+name "Default"
+rect 76 736 16 16
+//fgcolor 0.00 0.00 0.00 1.00
+//bgcolor 0.50 0.50 0.50 0.00
+borderstyle "NONE"
+shader textures/cross/18.tga
+
+}
+
+////////////////////////////////////////////////////right side/////////////////////////////
+
+// 19-36 in this block 
+resource
+Label
+{
+name "Default"
+rect 872 0 150 766  //blue box on right
+fgcolor 1.00 1.00 1.00 1.00
+bgcolor 0.11 0.13 0.37 0.75
+borderstyle "3D_BORDER"
+}
+
+
+resource
+Button
+{
+title "19"
+name "Default"
+rect 873 1 149 19
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 0.00 2.00 2.00 1.00
+borderstyle "3D_BORDER"
+hovershader "menu_button_glow"
+clicksound "sound/weapons/foley/m1_ping.wav"
+stuffcommand "cg_crosshair textures/cross/19.tga"
+}
+
+
+
+
+resource
+Label
+{
+name "Default"
+rect 949 22 16 16
+//fgcolor 0.00 0.00 0.00 1.00
+//bgcolor 0.50 0.50 0.50 0.00
+borderstyle "NONE"
+shader textures/cross/19.tga
+
+}
+
+
+resource
+Button
+{
+title "20"
+name "Default"
+rect 873 43 149 19
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 0.00 2.00 2.00 1.00
+borderstyle "3D_BORDER"
+hovershader "menu_button_glow"
+clicksound "sound/weapons/foley/m1_ping.wav"
+stuffcommand "cg_crosshair textures/cross/20.tga"
+}
+
+
+
+
+resource
+Label
+{
+name "Default"
+rect 949 64 16 16
+//fgcolor 0.00 0.00 0.00 1.00
+//bgcolor 0.50 0.50 0.50 0.00
+borderstyle "NONE"
+shader textures/cross/20.tga
+
+}
+
+
+resource
+Button
+{
+title "21"
+name "Default"
+rect 873 85 149 19
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 0.00 2.00 2.00 1.00
+borderstyle "3D_BORDER"
+hovershader "menu_button_glow"
+clicksound "sound/weapons/foley/m1_ping.wav"
+stuffcommand "cg_crosshair textures/cross/21.tga"
+}
+
+
+
+
+resource
+Label
+{
+name "Default"
+rect 949 106 16 16
+//fgcolor 0.00 0.00 0.00 1.00
+//bgcolor 0.50 0.50 0.50 0.00
+borderstyle "NONE"
+shader textures/cross/21.tga
+
+}
+
+
+resource
+Button
+{
+title "22"
+name "Default"
+rect 873 127 149 19
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 0.00 2.00 2.00 1.00
+borderstyle "3D_BORDER"
+hovershader "menu_button_glow"
+clicksound "sound/weapons/foley/m1_ping.wav"
+stuffcommand "cg_crosshair textures/cross/22.tga"
+}
+
+
+
+
+resource
+Label
+{
+name "Default"
+rect 949 148 16 16
+//fgcolor 0.00 0.00 0.00 1.00
+//bgcolor 0.50 0.50 0.50 0.00
+borderstyle "NONE"
+shader textures/cross/22.tga
+
+}
+
+
+resource
+Button
+{
+title "23"
+name "Default"
+rect 873 169 149 19
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 0.00 2.00 2.00 1.00
+borderstyle "3D_BORDER"
+hovershader "menu_button_glow"
+clicksound "sound/weapons/foley/m1_ping.wav"
+stuffcommand "cg_crosshair textures/cross/23.tga"
+}
+
+
+
+
+resource
+Label
+{
+name "Default"
+rect 949 190 16 16
+//fgcolor 0.00 0.00 0.00 1.00
+//bgcolor 0.50 0.50 0.50 0.00
+borderstyle "NONE"
+shader textures/cross/23.tga
+
+}
+
+
+
+resource
+Button
+{
+title "24"
+name "Default"
+rect 873 211 149 19
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 0.00 2.00 2.00 1.00
+borderstyle "3D_BORDER"
+hovershader "menu_button_glow"
+clicksound "sound/weapons/foley/m1_ping.wav"
+stuffcommand "cg_crosshair textures/cross/24.tga"
+}
+
+
+
+
+resource
+Label
+{
+name "Default"
+rect 949 232 16 16
+//fgcolor 0.00 0.00 0.00 1.00
+//bgcolor 0.50 0.50 0.50 0.00
+borderstyle "NONE"
+shader textures/cross/24.tga
+
+}
+
+
+
+resource
+Button
+{
+title "25"
+name "Default"
+rect 873 253 149 19
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 0.00 2.00 2.00 1.00
+borderstyle "3D_BORDER"
+hovershader "menu_button_glow"
+clicksound "sound/weapons/foley/m1_ping.wav"
+stuffcommand "cg_crosshair textures/cross/25.tga"
+}
+
+
+
+
+resource
+Label
+{
+name "Default"
+rect 949 274 16 16
+//fgcolor 0.00 0.00 0.00 1.00
+//bgcolor 0.50 0.50 0.50 0.00
+borderstyle "NONE"
+shader textures/cross/25.tga
+
+}
+
+resource
+Button
+{
+title "26"
+name "Default"
+rect 873 295 149 19
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 0.00 2.00 2.00 1.00
+borderstyle "3D_BORDER"
+hovershader "menu_button_glow"
+clicksound "sound/weapons/foley/m1_ping.wav"
+stuffcommand "cg_crosshair textures/cross/26.tga"
+}
+
+
+
+
+resource
+Label
+{
+name "Default"
+rect 949 316 16 16
+//fgcolor 0.00 0.00 0.00 1.00
+//bgcolor 0.50 0.50 0.50 0.00
+borderstyle "NONE"
+shader textures/cross/26.tga
+
+}
+
+
+resource
+Button
+{
+title "27"
+name "Default"
+rect 873 337 149 19
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 0.00 2.00 2.00 1.00
+borderstyle "3D_BORDER"
+hovershader "menu_button_glow"
+clicksound "sound/weapons/foley/m1_ping.wav"
+stuffcommand "cg_crosshair textures/cross/27.tga"
+}
+
+
+
+
+resource
+Label
+{
+name "Default"
+rect 949 358 16 16
+//fgcolor 0.00 0.00 0.00 1.00
+//bgcolor 0.50 0.50 0.50 0.00
+borderstyle "NONE"
+shader textures/cross/27.tga
+
+}
+
+
+resource
+Button
+{
+title "28"
+name "Default"
+rect 873 379 149 19
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 0.00 2.00 2.00 1.00
+borderstyle "3D_BORDER"
+hovershader "menu_button_glow"
+clicksound "sound/weapons/foley/m1_ping.wav"
+stuffcommand "cg_crosshair textures/cross/28.tga"
+}
+
+
+
+
+resource
+Label
+{
+name "Default"
+rect 949 400 16 16
+//fgcolor 0.00 0.00 0.00 1.00
+//bgcolor 0.50 0.50 0.50 0.00
+borderstyle "NONE"
+shader textures/cross/28.tga
+
+}
+
+
+resource
+Button
+{
+title "29"
+name "Default"
+rect 873 421 149 19
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 0.00 2.00 2.00 1.00
+borderstyle "3D_BORDER"
+hovershader "menu_button_glow"
+clicksound "sound/weapons/foley/m1_ping.wav"
+stuffcommand "cg_crosshair textures/cross/29.tga"
+}
+
+
+
+
+resource
+Label
+{
+name "Default"
+rect 949 442 16 16
+//fgcolor 0.00 0.00 0.00 1.00
+//bgcolor 0.50 0.50 0.50 0.00
+borderstyle "NONE"
+shader textures/cross/29.tga
+
+}
+
+
+resource
+Button
+{
+title "30"
+name "Default"
+rect 873 463 149 19
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 0.00 2.00 2.00 1.00
+borderstyle "3D_BORDER"
+hovershader "menu_button_glow"
+clicksound "sound/weapons/foley/m1_ping.wav"
+stuffcommand "cg_crosshair textures/cross/30.tga"
+}
+
+
+
+
+resource
+Label
+{
+name "Default"
+rect 949 484 16 16
+//fgcolor 0.00 0.00 0.00 1.00
+//bgcolor 0.50 0.50 0.50 0.00
+borderstyle "NONE"
+shader textures/cross/30.tga
+
+}
+
+
+resource
+Button
+{
+title "31"
+name "Default"
+rect 873 505 149 19
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 0.00 2.00 2.00 1.00
+borderstyle "3D_BORDER"
+hovershader "menu_button_glow"
+clicksound "sound/weapons/foley/m1_ping.wav"
+stuffcommand "cg_crosshair textures/cross/31.tga"
+}
+
+
+
+
+resource
+Label
+{
+name "Default"
+rect 949 526 16 16
+//fgcolor 0.00 0.00 0.00 1.00
+//bgcolor 0.50 0.50 0.50 0.00
+borderstyle "NONE"
+shader textures/cross/31.tga
+
+}
+
+
+resource
+Button
+{
+title "32"
+name "Default"
+rect 873 547 149 19
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 0.00 2.00 2.00 1.00
+borderstyle "3D_BORDER"
+hovershader "menu_button_glow"
+clicksound "sound/weapons/foley/m1_ping.wav"
+stuffcommand "cg_crosshair textures/cross/32.tga"
+}
+
+
+
+
+resource
+Label
+{
+name "Default"
+rect 949 568 16 16
+//fgcolor 0.00 0.00 0.00 1.00
+//bgcolor 0.50 0.50 0.50 0.00
+borderstyle "NONE"
+shader textures/cross/32.tga
+
+}
+
+
+resource
+Button
+{
+title "33"
+name "Default"
+rect 873 589 149 19
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 0.00 2.00 2.00 1.00
+borderstyle "3D_BORDER"
+hovershader "menu_button_glow"
+clicksound "sound/weapons/foley/m1_ping.wav"
+stuffcommand "cg_crosshair textures/cross/33.tga"
+}
+
+
+
+
+resource
+Label
+{
+name "Default"
+rect 949 610 16 16
+//fgcolor 0.00 0.00 0.00 1.00
+//bgcolor 0.50 0.50 0.50 0.00
+borderstyle "NONE"
+shader textures/cross/33.tga
+
+}
+
+
+resource
+Button
+{
+title "34"
+name "Default"
+rect 873 631 149 19
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 0.00 2.00 2.00 1.00
+borderstyle "3D_BORDER"
+hovershader "menu_button_glow"
+clicksound "sound/weapons/foley/m1_ping.wav"
+stuffcommand "cg_crosshair textures/cross/34.tga"
+}
+
+
+
+
+resource
+Label
+{
+name "Default"
+rect 949 652 16 16
+//fgcolor 0.00 0.00 0.00 1.00
+//bgcolor 0.50 0.50 0.50 0.00
+borderstyle "NONE"
+shader textures/cross/34.tga
+
+}
+
+
+resource
+Button
+{
+title "35"
+name "Default"
+rect 873 673 149 19
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 0.00 2.00 2.00 1.00
+borderstyle "3D_BORDER"
+hovershader "menu_button_glow"
+clicksound "sound/weapons/foley/m1_ping.wav"
+stuffcommand "cg_crosshair textures/cross/35.tga"
+}
+
+
+
+
+resource
+Label
+{
+name "Default"
+rect 949 694 16 16
+//fgcolor 0.00 0.00 0.00 1.00
+//bgcolor 0.50 0.50 0.50 0.00
+borderstyle "NONE"
+shader textures/cross/35.tga
+
+}
+
+
+resource
+Button
+{
+title "36"
+name "Default"
+rect 873 715 149 19
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 0.00 2.00 2.00 1.00
+borderstyle "3D_BORDER"
+hovershader "menu_button_glow"
+clicksound "sound/weapons/foley/m1_ping.wav"
+stuffcommand "cg_crosshair textures/cross/36.tga"
+}
+
+
+
+
+resource
+Label
+{
+name "Default"
+rect 949 736 16 16
+//fgcolor 0.00 0.00 0.00 1.00
+//bgcolor 0.50 0.50 0.50 0.00
+borderstyle "NONE"
+shader textures/cross/36.tga
+
+}
+
+////////////////////////////////////////////////////Under back button/////////////////////////////
+
+
+
+
+
+// 37-41 in this block 
+resource
+Label
+{
+name "Default"
+rect 200 242 150 210  //blue box under back button
+fgcolor 1.00 1.00 1.00 1.00
+bgcolor 0.11 0.13 0.37 0.75
+borderstyle "3D_BORDER"
+}
+
+resource
+Button
+{
+title "37"
+name "Default"
+rect 201 242 149 19
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 0.00 2.00 2.00 1.00
+borderstyle "3D_BORDER"
+hovershader "menu_button_glow"
+clicksound "sound/weapons/foley/m1_ping.wav"
+stuffcommand "cg_crosshair textures/cross/37.tga"
+}
+
+
+
+
+resource
+Label
+{
+name "Default"
+rect 277 263 16 16
+//fgcolor 0.00 0.00 0.00 1.00
+//bgcolor 0.50 0.50 0.50 0.00
+borderstyle "NONE"
+shader textures/cross/37.tga
+
+}
+
+resource
+Button
+{
+title "38"
+name "Default"
+rect 201 284 149 19
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 0.00 2.00 2.00 1.00
+borderstyle "3D_BORDER"
+hovershader "menu_button_glow"
+clicksound "sound/weapons/foley/m1_ping.wav"
+stuffcommand "cg_crosshair textures/cross/38.tga"
+}
+
+
+
+
+resource
+Label
+{
+name "Default"
+rect 277 305 16 16
+//fgcolor 0.00 0.00 0.00 1.00
+//bgcolor 0.50 0.50 0.50 0.00
+borderstyle "NONE"
+shader textures/cross/38.tga
+
+}
+
+resource
+Button
+{
+title "39"
+name "Default"
+rect 201 326 149 19
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 0.00 2.00 2.00 1.00
+borderstyle "3D_BORDER"
+hovershader "menu_button_glow"
+clicksound "sound/weapons/foley/m1_ping.wav"
+stuffcommand "cg_crosshair textures/cross/39.tga"
+}
+
+
+
+
+resource
+Label
+{
+name "Default"
+rect 277 347 16 16
+//fgcolor 0.00 0.00 0.00 1.00
+//bgcolor 0.50 0.50 0.50 0.00
+borderstyle "NONE"
+shader textures/cross/39.tga
+
+}
+
+
+resource
+Button
+{
+title "40"
+name "Default"
+rect 201 368 149 19
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 0.00 2.00 2.00 1.00
+borderstyle "3D_BORDER"
+hovershader "menu_button_glow"
+clicksound "sound/weapons/foley/m1_ping.wav"
+stuffcommand "cg_crosshair textures/cross/40.tga"
+}
+
+
+
+
+resource
+Label
+{
+name "Default"
+rect 277 389 16 16
+//fgcolor 0.00 0.00 0.00 1.00
+//bgcolor 0.50 0.50 0.50 0.00
+borderstyle "NONE"
+shader textures/cross/40.tga
+
+}
+
+resource
+Button
+{
+title "41"
+name "Default"
+rect 201 410 149 19
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 0.00 2.00 2.00 1.00
+borderstyle "3D_BORDER"
+hovershader "menu_button_glow"
+clicksound "sound/weapons/foley/m1_ping.wav"
+stuffcommand "cg_crosshair textures/cross/41.tga"
+}
+
+
+
+
+resource
+Label
+{
+name "Default"
+rect 277 431 16 16
+//fgcolor 0.00 0.00 0.00 1.00
+//bgcolor 0.50 0.50 0.50 0.00
+borderstyle "NONE"
+shader textures/cross/41.tga
+
+}
+
+
+
+////////////////////////////////////////////////////Under exit button/////////////////////////////
+
+
+// 42-46 in this block 
+resource
+Label
+{
+name "Default"
+rect 672 242 150 210  //blue box under exit button
+fgcolor 1.00 1.00 1.00 1.00
+bgcolor 0.11 0.13 0.37 0.75
+borderstyle "3D_BORDER"
+}
+
+
+resource
+Button
+{
+title "42"
+name "Default"
+rect 673 243 149 19
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 0.00 2.00 2.00 1.00
+borderstyle "3D_BORDER"
+hovershader "menu_button_glow"
+clicksound "sound/weapons/foley/m1_ping.wav"
+stuffcommand "cg_crosshair textures/cross/42.tga"
+}
+
+
+
+
+resource
+Label
+{
+name "Default"
+rect 749 264 16 16
+//fgcolor 0.00 0.00 0.00 1.00
+//bgcolor 0.50 0.50 0.50 0.00
+borderstyle "NONE"
+shader textures/cross/42.tga
+
+}
+
+resource
+Button
+{
+title "43"
+name "Default"
+rect 673 285 149 19
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 0.00 2.00 2.00 1.00
+borderstyle "3D_BORDER"
+hovershader "menu_button_glow"
+clicksound "sound/weapons/foley/m1_ping.wav"
+stuffcommand "cg_crosshair textures/cross/43.tga"
+}
+
+
+
+
+resource
+Label
+{
+name "Default"
+rect 749 306 16 16
+//fgcolor 0.00 0.00 0.00 1.00
+//bgcolor 0.50 0.50 0.50 0.00
+borderstyle "NONE"
+shader textures/cross/43.tga
+
+}
+
+resource
+Button
+{
+title "Made by Major"
+name "Default"
+rect 673 327 149 19
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 0.00 2.00 2.00 1.00
+borderstyle "3D_BORDER"
+hovershader "menu_button_glow"
+clicksound "sound/weapons/foley/m1_ping.wav"
+stuffcommand "cg_crosshair textures/cross/madebymajor.tga"
+}
+
+
+
+
+resource
+Label
+{
+name "Default"
+rect 749 348 16 16
+//fgcolor 0.00 0.00 0.00 1.00
+//bgcolor 0.50 0.50 0.50 0.00
+borderstyle "NONE"
+shader textures/cross/madebymajor.tga
+
+}
+
+resource
+Button
+{
+title "Made by Major"
+name "Default"
+rect 673 369 149 19
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 0.00 2.00 2.00 1.00
+borderstyle "3D_BORDER"
+hovershader "menu_button_glow"
+clicksound "sound/weapons/foley/m1_ping.wav"
+stuffcommand "cg_crosshair textures/cross/madebymajor1.tga"
+}
+
+
+
+
+resource
+Label
+{
+name "Default"
+rect 749 390 16 16
+//fgcolor 0.00 0.00 0.00 1.00
+//bgcolor 0.50 0.50 0.50 0.00
+borderstyle "NONE"
+shader textures/cross/madebymajor1.tga
+
+}
+
+resource
+Button
+{
+title "Shotgun"
+name "Default"
+rect 673 411 149 19
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 0.00 2.00 2.00 1.00
+borderstyle "3D_BORDER"
+hovershader "menu_button_glow"
+clicksound "sound/weapons/foley/m1_ping.wav"
+stuffcommand "cg_crosshair textures/cross/shotgun.tga"
+}
+
+
+
+
+resource
+Label
+{
+name "Default"
+rect 749 432 16 16
+//fgcolor 0.00 0.00 0.00 1.00
+//bgcolor 0.50 0.50 0.50 0.00
+borderstyle "NONE"
+shader textures/cross/shotgun.tga
+
+}
+
+
+
+
+
+end.

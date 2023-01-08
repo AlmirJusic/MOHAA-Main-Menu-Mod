@@ -1,0 +1,174 @@
+menu "major44"  643 476 FROM_top .75
+//fgcolor 0.0 0.0 0.0 0.0
+bgcolor 0 0 0 0 
+borderstyle NONe
+align top   //center
+
+
+
+
+
+
+//bgcolor 0.50 0.50 0.50 0.50
+
+//resource
+//Label
+//{
+//name "Default"
+//rect 10 0 643 476          //rect 2 0 632 469
+//fgcolor 0.00 0.00 0.00 1.00
+//bgcolor 0.00 0.00 0.00 0.00    
+//borderstyle "RAISED"
+//}
+
+
+//smilely logo 100 97 needs fixed
+resource    
+button
+{
+//title "testing"
+name "smilely"  
+rect 276 215 100 97  
+//fgcolor 0.00 0.00 0.00 1.00
+//bgcolor 0.50 0.50 0.50 0.50
+borderstyle "RAISED" 
+stuffcommand "pushmenu crosshairs"
+shader "menu_button_trans"
+hovershader "menu_button_glow"
+shader "textures/cross/smilely.tga"
+clicksound "textures/headshot2.wav"  //"sound/mechanics/hit_notify.wav"
+font facfont-20
+}
+}
+
+
+
+resource
+Slider
+{
+title "VolSlide"
+name "Default"
+rect 411 55 145 21
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 0.00 0.00 1.00 0.50
+borderstyle "RAISED"
+linkcvar "s_volume"
+slidertype float
+setrange 0 1
+stepsize 0.1
+
+}
+resource
+Slider
+{
+title "Sensitivity"
+name "Default"
+rect 77 54 145 21
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 0.00 0.00 1.00 0.50
+borderstyle "RAISED"
+linkcvar "sensitivity"
+setrange 1 20
+slidertype float
+stepsize 1
+
+}
+resource
+Label
+{
+title "Mouse Sensitivity"
+name "Default"
+rect 77 28 145 21
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 1.00 1.00 1.00 0.50
+borderstyle "RAISED"
+}
+resource
+Label
+{
+title "Volume"
+name "Default"
+rect 411 28 145 21           //rect 445 23 86 29
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 1.00 1.00 1.00 0.50
+borderstyle "RAISED"
+}
+resource
+PulldownMenuContainer
+{
+title "View of Gun"
+name "Default"
+rect 169 138 90 20
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 1.00 1.00 1.00 0.50
+borderstyle "RAISED"
+addpopup "Gun View" "Full" command "set cg_drawviewmodel 2"
+addpopup "Gun View" "Gun Only" command "set cg_drawviewmodel 1"
+addpopup "Gun View" "None" command "set cg_drawviewmodel 0"
+
+}
+resource
+Label
+{
+title "By Sean Paul"
+name "Default"
+rect 165 108 316 20
+fgcolor 1.00 1.00 1.00 1.00
+bgcolor 0.00 0.00 0.43 0.50
+borderstyle "NONE"
+}
+resource
+CheckBox
+{
+title "Crosshair"
+name "Default"
+rect 274 138 95 20
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 1.00 1.00 1.00 0.50
+borderstyle "RAISED"
+linkcvar "ui_crosshair"
+}
+resource
+CheckBox
+{
+title "Lag'O Meter"
+name "Default"
+rect 388 138 95 20
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 1.00 1.00 1.00 0.50
+borderstyle "RAISED"
+linkcvar "cg_lagometer"
+}
+resource
+Button
+{
+title "Select Crosshair"
+name "Default"
+rect 245 182 159 18
+fgcolor 0.00 0.00 0.00 1.00
+bgcolor 1.00 0.00 0.00 0.75
+borderstyle "3D_BORDER"
+stuffcommand "pushmenu crosshairs"
+shader "menu_button_trans"
+hovershader "menu_button_glow"
+clicksound "textures/RiflemanPissed5.wav"
+}
+resource
+Button
+{
+title "Exit"
+name "Default"
+rect 306 315 40 18
+fgcolor 0.00 0.00 0.00 1.00     //black font
+bgcolor 0.0 2.0 0.0 1.00       //lime green
+borderstyle "RAISED"
+stuffcommand "togglemenu major44"
+}
+
+
+
+
+
+
+
+end.
