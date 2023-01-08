@@ -14,14 +14,14 @@ binding commands, rcon and server passwords ect.
 
 ## How to install:
 ```
-Just place the zzz-2a-menu.Pk3 file in your "maintt" or "mainta" folder in your mohaa directory.
+Just place the zzz-2a-menu.pk3 file in your "maintt" or "mainta" folder in your mohaa directory.
 If you are using Medal Of Honor Spearhead version place the .Pk3 in mainta folder.
 If you are using Medal Of Honor Breakthrough version place the .Pk3 in maintt folder.
 ```
 
 ## How to uninstall:
 ```
-Simply remove the .pk3 files from the "maintt" or "mainta" folder.
+Simply remove the zzz-2a-menu.pk3 file from the "maintt" or "mainta" folder.
 ```
 
 ![MainMenu](https://user-images.githubusercontent.com/74711786/211196285-dd6f79b8-7b74-42f4-b364-668b36ad78d5.jpg)
