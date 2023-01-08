@@ -3,9 +3,11 @@
 ## About
 ```
 It's a useful Medal Of Honor Alied Asault mod which has everything that you need on place.
-The mod includes standard options and shortcuts, commands, private chats, crosshair menu with about 50 different crosshairs,
+The mod includes standard options and shortcuts, commands, private chats,
+crosshair menu with about 50 different crosshairs,
 fixed server browser, MP3 player that you can use in the game, even you can use notepad.
-Also what can you do, you can edit autoexec.cfg file and put your game settings, binding commands, rcon and server passwords ect.
+Also what can you do, you can edit autoexec.cfg file and put your game settings,
+binding commands, rcon and server passwords ect.
 
 ```
 
